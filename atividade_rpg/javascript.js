@@ -1,5 +1,5 @@
 class Personagem {
-    constructor(nome, titulo, hp, mana, energia){
+    constructor(nome, titulo, hp, mana, energia) {
         this.nome = nome;
         this.titulo = titulo;
         this.hp = hp;
@@ -9,7 +9,7 @@ class Personagem {
 }
 
 class Habilidade {
-    constructor(id, nome, dano, custo, energia){
+    constructor(id, nome, dano, custo, energia) {
         this.id = id;
         this.nome = nome;
         this.dano = dano;
@@ -18,19 +18,26 @@ class Habilidade {
     }
 }
 
-// Instancia Classes - Criar Objetos
-let Mael = new Personagem("Mael", "🪽 Arcanjo da Luz" ,100,100,0);
-let Crowley = new Personagem("Crowley", "👹 Rei Demônio", 100,100,0);
+// Instâncias das classes
+let Mael = new Personagem("Mael", "🪽 Arcanjo da Luz", 100, 100, 0);
+let Crowley = new Personagem("Crowley", "👹 Rei Demônio", 100, 100, 0);
 
-//Preencher os Status
-
+// Preencher os status
 document.getElementById("Mael").textContent = Mael.nome;
-document.getElementById("Arcanjo da Luz") = Mael.titulo;
+document.getElementById("tituloMael").textContent = Mael.titulo;
 
 // Criar habilidades
+let containerBtn = document.getElementById("controles");
 let listaHabilidades = [
-    new Habilidade(1,"⚔️ Ataque", 4, 0, 0),
-    new Habilidade(2, "🪙 skill, 8, 10, 0"),
-    new Habilidade(3, "💥 supremo", 15, 0, 100),
-    
+    new Habilidade(1, "⚔️ Ataque", 4, 0, 0),
+    new Habilidade(2, "🪙 Skill", 8, 10, 0),
+    new Habilidade(3, "💥 Supremo", 15, 0, 100),
 ];
+
+// Mostrar habilidades na tela
+listaHabilidades.forEach(hab => {
+    let btn = document.createElement("button");
+    btn.innerText = hab.nome;
+
+    containerBtn.appendChild(btn);
+});
