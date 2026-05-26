@@ -32,7 +32,7 @@ let listaHabilidades = [
     new Habilidade(1, "⚔️ Ataque", 4, 0, 0),
     new Habilidade(2, "🪙 Skill", 8, 10, 0),
     new Habilidade(3, "💥 Supremo", 15, 0, 100),
-];
+];7
 
 // Mostrar habilidades na tela
 listaHabilidades.forEach(hab => {
@@ -40,4 +40,5 @@ listaHabilidades.forEach(hab => {
     btn.innerText = hab.nome;
 
     containerBtn.appendChild(btn);
+
 });
