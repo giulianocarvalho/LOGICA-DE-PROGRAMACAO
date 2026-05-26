@@ -1,7 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Estrela da Morte</title>
 </head>
 
 <body>
@@ -16,7 +22,8 @@
             </div>
 
             <!-- Body -->
-            <div class="card-body" style="background-image: url('assets/sky.jpg');
+            <div class="card-body"
+                style="background-image: url('assets/sky.jpg');
                        background-size: cover;
                        background-position: center;">
 
@@ -36,17 +43,20 @@
 
                             <li class="list-group-item">
                                 ❤️
-                                <progress value="90" max="100" style="accent-color: red;"></progress>
+                                <progress id="hp-hero" value="100" max="100"
+                                    style="accent-color: red;"></progress>
                             </li>
 
                             <li class="list-group-item">
                                 🧪
-                                <progress value="80" max="100" style="accent-color: lightblue;"></progress>
+                                <progress id="mp-hero" value="100" max="100"
+                                    style="accent-color: lightblue;"></progress>
                             </li>
 
                             <li class="list-group-item">
                                 ⚡
-                                <progress value="80" max="100" style="accent-color: green;"></progress>
+                                <progress id="en-hero" value="0" max="100"
+                                    style="accent-color: green;"></progress>
                             </li>
 
                         </ul>
@@ -61,23 +71,26 @@
                                 <strong id="Crowley">Crowley</strong>
                             </li>
 
-                            <li class="list-group-item">
+                            <li class="list-group-item" id="tituloCrowley">
                                 Rei Demônio
                             </li>
 
                             <li class="list-group-item">
                                 ❤️
-                                <progress value="70" max="100" style="accent-color: red;"></progress>
+                                <progress id="hp-boss" value="100" max="100"
+                                    style="accent-color: red;"></progress>
                             </li>
 
                             <li class="list-group-item">
                                 🧪
-                                <progress value="60" max="100" style="accent-color: lightblue;"></progress>
+                                <progress id="mp-boss" value="100" max="100"
+                                    style="accent-color: lightblue;"></progress>
                             </li>
 
                             <li class="list-group-item">
                                 ⚡
-                                <progress value="85" max="100" style="accent-color: green;"></progress>
+                                <progress id="en-boss" value="100" max="100"
+                                    style="accent-color: green;"></progress>
                             </li>
 
                         </ul>
@@ -91,14 +104,16 @@
 
                     <!-- IMG ANJO -->
                     <div class="col text-end">
-                        <img src="assets/mael.gif" width="200" height="200" alt="Mael" /> 
+                        <img src="assets/mael.gif" width="200" height="200" alt="Mael">
+
                         <div></div>
-                        <div class="btn-group" id="controles"></div>
+
+                        <div class="btn-group mt-2" id="controles"></div>
                     </div>
 
                     <!-- IMG DEMÔNIO -->
                     <div class="col">
-                        <img src="assets/infernal.gif" width="200" height="200" alt="Crowley" />
+                        <img src="assets/infernal.gif" width="200" height="200" alt="Crowley">
                     </div>
 
                 </div>
@@ -107,15 +122,15 @@
 
             <!-- Footer -->
             <div class="card-footer text-center">
-                Batalha Suprema
+                Guerra Santa
             </div>
 
         </div>
 
     </div>
 
-</body>
+    <script src="javascript.js"></script>
 
-<script src="javascript.js"></script>
+</body>
 
 </html>
