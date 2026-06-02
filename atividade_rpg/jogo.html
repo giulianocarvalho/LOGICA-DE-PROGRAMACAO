@@ -12,117 +12,155 @@
 
 <body>
 
-    <div class="container mt-4">
+    <div id="tela">
 
-        <div class="card">
+        <div class="container mt-4">
 
-            <!-- Header -->
-            <div class="card-header text-center">
-                Estrela da Morte - Criado por Giuliano
-            </div>
+            <div class="card">
 
-            <!-- Body -->
-            <div class="card-body"
-                style="background-image: url('assets/sky.jpg');
-                       background-size: cover;
-                       background-position: center;">
+                <!-- Cabeçalho -->
+                <div class="card-header text-center">
+                    Estrela da Morte - Criado por Giuliano
+                </div>
 
-                <div class="row">
+                <!-- Corpo -->
+                <div class="card-body"
+                    style="background-image: url('assets/sky.jpg');
+                           background-size: cover;
+                           background-position: center;">
 
-                    <!-- Mael -->
-                    <div class="col">
-                        <ul class="list-group text-end">
+                    <div class="row">
 
-                            <li class="list-group-item">
-                                <strong id="Mael">Mael</strong>
-                            </li>
+                        <!-- HERÓI -->
+                        <div class="col">
 
-                            <li class="list-group-item" id="tituloMael">
-                                Arcanjo da Luz
-                            </li>
+                            <ul class="list-group text-end">
 
-                            <li class="list-group-item">
-                                ❤️
-                                <progress id="hp-hero" value="100" max="100"
-                                    style="accent-color: red;"></progress>
-                            </li>
+                                <li class="list-group-item">
+                                    <strong id="Mael">Mael</strong>
+                                </li>
 
-                            <li class="list-group-item">
-                                🧪
-                                <progress id="mp-hero" value="100" max="100"
-                                    style="accent-color: lightblue;"></progress>
-                            </li>
+                                <li class="list-group-item" id="tituloMael">
+                                    Arcanjo da Luz
+                                </li>
 
-                            <li class="list-group-item">
-                                ⚡
-                                <progress id="en-hero" value="0" max="100"
-                                    style="accent-color: green;"></progress>
-                            </li>
+                                <li class="list-group-item">
+                                    ❤️
+                                    <progress id="hp-hero"
+                                              value="100"
+                                              max="100"
+                                              style="accent-color:red;">
+                                    </progress>
+                                </li>
 
-                        </ul>
+                                <li class="list-group-item">
+                                    🧪
+                                    <progress id="mp-hero"
+                                              value="100"
+                                              max="100"
+                                              style="accent-color:lightblue;">
+                                    </progress>
+                                </li>
+
+                                <li class="list-group-item">
+                                    ⚡
+                                    <progress id="en-hero"
+                                              value="100"
+                                              max="100"
+                                              style="accent-color:green;">
+                                    </progress>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <!-- BOSS -->
+                        <div class="col">
+
+                            <ul class="list-group">
+
+                                <li class="list-group-item">
+                                    <strong id="Crowley">Crowley</strong>
+                                </li>
+
+                                <li class="list-group-item" id="tituloCrowley">
+                                    Rei Demônio
+                                </li>
+
+                                <li class="list-group-item">
+                                    ❤️
+                                    <progress id="hp-boss"
+                                              value="100"
+                                              max="100"
+                                              style="accent-color:red;">
+                                    </progress>
+                                </li>
+
+                                <li class="list-group-item">
+                                    🧪
+                                    <progress id="mp-boss"
+                                              value="100"
+                                              max="100"
+                                              style="accent-color:lightblue;">
+                                    </progress>
+                                </li>
+
+                                <li class="list-group-item">
+                                    ⚡
+                                    <progress id="en-boss"
+                                              value="100"
+                                              max="100"
+                                              style="accent-color:green;">
+                                    </progress>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
                     </div>
 
-                    <!-- Crowley -->
-                    <div class="col">
+                    <!-- Imagens -->
+                    <div class="row mt-4">
 
-                        <ul class="list-group">
+                        <!-- MAEL -->
+                        <div class="col">
 
-                            <li class="list-group-item">
-                                <strong id="Crowley">Crowley</strong>
-                            </li>
+                            <div class="d-flex justify-content-end align-items-center gap-3">
 
-                            <li class="list-group-item" id="tituloCrowley">
-                                Rei Demônio
-                            </li>
+                                <!-- Botões -->
+                                <div id="controles" class="btn-group-vertical"></div>
 
-                            <li class="list-group-item">
-                                ❤️
-                                <progress id="hp-boss" value="100" max="100"
-                                    style="accent-color: red;"></progress>
-                            </li>
+                                <!-- Imagem -->
+                                <img src="assets/mael.gif"
+                                     width="200"
+                                     height="200"
+                                     alt="Mael">
 
-                            <li class="list-group-item">
-                                🧪
-                                <progress id="mp-boss" value="100" max="100"
-                                    style="accent-color: lightblue;"></progress>
-                            </li>
+                            </div>
 
-                            <li class="list-group-item">
-                                ⚡
-                                <progress id="en-boss" value="100" max="100"
-                                    style="accent-color: green;"></progress>
-                            </li>
+                        </div>
 
-                        </ul>
+                        <!-- CROWLEY -->
+                        <div class="col text-center">
+
+                            <img src="assets/infernal.gif"
+                                 width="200"
+                                 height="200"
+                                 alt="Crowley">
+
+                        </div>
 
                     </div>
 
                 </div>
 
-                <!-- Imagens -->
-                <div class="row mt-3">
-
-                    <!-- IMG ANJO -->
-                    <div class="col text-end">
-                        <img src="assets/mael.gif" width="200" height="200" alt="Mael">
-
-                        <div></div>
-
-                        <div class="btn-group mt-2" id="controles"></div>
-                    </div>
-
-                    <!-- IMG DEMÔNIO -->
-                    <div class="col">
-                        <img src="assets/infernal.gif" width="200" height="200" alt="Crowley">
-                    </div>
-
+                <!-- Rodapé -->
+                <div class="card-footer text-center">
+                    Guerra Santa
                 </div>
 
-            </div>
-
-            <!-- Footer -->
-            <div class="card-footer text-center">
-                Guerra Santa
             </div>
 
         </div>
