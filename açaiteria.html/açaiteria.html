@@ -1,99 +1,139 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Açaíteria Vazio Roxo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Açaíteria Vazio Roxo</h1>
-        <p>O melhor açaí da cidade, com ingredientes frescos e sabor incomparável!</p>
-    </header>
-    <img src="banner.png" width="500">
 
-    <hr>
+    <div class="container mt-4">
 
-    <h2>Cardápio</h2>
+        <header class="bg-dark text-white text-center p-4">
+            <img src="banner.png" width="500">
+            <h1>Açaíteria Vazio Roxo</h1>
+            <p>O melhor açaí da cidade, com ingredientes frescos e sabor incomparável!</p>
+        </header>
+        
+            <nav class="nav bg-secondary">
+                <a href="#" class="nav-link link-light">Início</a>
+                <a href="#" class="nav-link link-light">Tigelas</a>
+                <a href="#" class="nav-link link-light">Reservas</a>
+            </nav>
 
-    <h3>Açaí Tradicional</h3>
 
-    <ul>
-        <li>300 ml - R$ 12,00</li>
-        <li>500 ml - R$ 18,00</li>
-        <li>700 ml - R$ 24,00</li>
-        <li>1 Litro - R$ 32,00</li>
-    </ul>
 
-    <h3>Açaí Especial Vazio Roxo</h3>
+            <hr>
 
-    <ul>
-        <li>300 ml - R$ 15,00</li>
-        <li>500 ml - R$ 22,00</li>
-        <li>700 ml - R$ 28,00</li>
-        <li>1 Litro - R$ 38,00</li>
-    </ul>
+            <h2>Cardápio</h2>
 
-    <h3>Complementos Inclusos</h3>
+            <h3>Açaí Tradicional</h3>
 
-    <ul>
-        <li>Granola</li>
-        <li>Banana</li>
-        <li>Morango</li>
-        <li>Paçoca</li>
-        <li>Leite Condensado</li>
-        <li>Calda de Chocolate</li>
-    </ul>
+            <ul>
+                <li>300 ml - R$ 12,00</li>
+                <li>500 ml - R$ 18,00</li>
+                <li>700 ml - R$ 24,00</li>
+                <li>1 Litro - R$ 32,00</li>
+            </ul>
 
-    <h3>Adicionais</h3>
+            <h3>Açaí Especial Vazio Roxo</h3>
 
-    <ul>
-        <li>Nutella - R$ 3,00</li>
-        <li>Leite Ninho - R$ 2,00</li>
-        <li>Kiwi - R$ 2,50</li>
-        <li>Oreo - R$ 2,00</li>
-        <li>Confete - R$ 2,00</li>
-    </ul>
+            <ul>
+                <li>300 ml - R$ 15,00</li>
+                <li>500 ml - R$ 22,00</li>
+                <li>700 ml - R$ 28,00</li>
+                <li>1 Litro - R$ 38,00</li>
+            </ul>
 
-    <hr>
+            <h3>Complementos Inclusos</h3>
 
-    <h2>Sabores Temáticos</h2>
+            <ul>
+                <li>Granola</li>
+                <li>Banana</li>
+                <li>Morango</li>
+                <li>Paçoca</li>
+                <li>Leite Condensado</li>
+                <li>Calda de Chocolate</li>
+            </ul>
 
-    <ul>
-        <li>Gojo - Açaí com leite ninho e morango</li>
-        <li>Sukuna - Açaí com nutella e paçoca</li>
-        <li>Megumi - Açaí com banana e granola</li>
-        <li>Yuji - Açaí com chocolate e Oreo</li>
-    </ul>
+            <h3>Adicionais</h3>
 
-    <hr>
+            <ul>
+                <li>Nutella - R$ 3,00</li>
+                <li>Leite Ninho - R$ 2,00</li>
+                <li>Kiwi - R$ 2,50</li>
+                <li>Oreo - R$ 2,00</li>
+                <li>Confete - R$ 2,00</li>
+            </ul>
 
-    <h2>Faça seu Pedido</h2>
+            <hr>
 
-    <form>
-        <label>Nome Completo:</label><br>
-        <input type="text"><br><br>
+            <h2>Sabores Temáticos</h2>
 
-        <label>Telefone:</label><br>
-        <input type="tel"><br><br>
+            <ul>
+                <li>Gojo - Açaí com leite ninho e morango</li>
+                <li>Sukuna - Açaí com nutella e paçoca</li>
+                <li>Megumi - Açaí com banana e granola</li>
+                <li>Yuji - Açaí com chocolate e Oreo</li>
+            </ul>
 
-        <label>Tamanho do Açaí:</label><br>
-        <select>
-            <option>300 ml</option>
-            <option>500 ml</option>
-            <option>700 ml</option>
-            <option>1 Litro</option>
-        </select><br><br>
+            <hr>
 
-        <label>Observações:</label><br>
-        <textarea></textarea><br><br>
+            <h2>Faça seu Pedido</h2>
 
-        <input type="submit" value="Enviar Pedido">
-    </form>
+            <form>
 
-    <hr>
+                <label>Nome Completo:</label><br>
+                <input type="text" required><br><br>
 
-    <h3>Contato</h3>
+                <label>Telefone:</label><br>
+                <input type="tel" required><br><br>
 
-    <p>Telefone: (61) 99999-9999</p>
-    <p>Instagram: @vazioroxo</p>
+                <label>Tamanho do Açaí:</label><br>
+                <select>
+                    <option>300 ml</option>
+                    <option>500 ml</option>
+                    <option>700 ml</option>
+                    <option>1 Litro</option>
+                </select><br><br>
+
+                <label>Escolha os Complementos:</label><br>
+
+                <input type="checkbox"> Granola <br>
+                <input type="checkbox"> Banana <br>
+                <input type="checkbox"> Morango <br>
+                <input type="checkbox"> Paçoca <br>
+                <input type="checkbox"> Leite Condensado <br>
+                <input type="checkbox"> Calda de Chocolate <br><br>
+
+                <label>Observações:</label><br>
+                <textarea rows="4" cols="40"></textarea><br><br>
+
+                <input type="submit" value="Enviar Pedido">
+
+            </form>
+
+            <hr>
+
+            <h3>Contato</h3>
+
+            <p>Telefone: (61) 99999-9999</p>
+            <p>Instagram: @vazioroxo</p>
+            <p>Endereço: Aguas Claras, 777 - Brasília/DF</p>
+
+            <hr>
+
+            <footer>
+                <p>&copy; 2026 Açaíteria Vazio Roxo - Todos os direitos reservados.</p>
+            </footer>
+
+    </div>
+
+</body>
+
+</html>
